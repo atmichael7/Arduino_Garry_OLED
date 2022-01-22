@@ -1,12 +1,4 @@
-// This is the base file I got working after changing the screen address to 0x3C cuz it was on 0x3D
-
-/**************************************************************************
- This is an example for our Monochrome OLEDs based on SSD1306 drivers
-
- Pick one up today in the adafruit shop!
- ------> http://www.adafruit.com/category/63_98
-
- This example is for a 128x64 pixel display using I2C to communicate
+This example is for a 128x64 pixel display using I2C to communicate
  3 pins are required to interface (two I2C and one reset).
 
  Adafruit invests time and resources providing this open
@@ -19,6 +11,11 @@
  All text above, and the splash screen below must be
  included in any redistribution.
  **************************************************************************/
+// Oled -> Nano - Wire [screen testing]
+// 5v   -> vcc  - (Green)
+// gnd  -> gnd  - (Blue)
+// SCL  -> a5   - (Yellow)
+// SDA  -> a4   - (Orange)
 
 #include <SPI.h>
 #include <Wire.h>
